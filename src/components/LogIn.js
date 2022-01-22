@@ -24,7 +24,7 @@ function LogIn(props) {
         <div>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="userName">User Name</label>
+                    <label>User Name</label>
                     <input type="text" name="userName" onChange={handleChange}/>
                 </div>
                 <div>

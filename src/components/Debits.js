@@ -33,11 +33,12 @@ function Debits(props) {
                 {props.debitInfo != null &&
                     <div id="debit-list-column">
                         {props.debitInfo.map((item) => {
+                            let date = new Date(item.date)
                             return (
                                 <div className="debits">
                                     <p className="descriptions">ITEM: {item.description}</p>
                                     <p className="descriptions">COST: ${item.amount}</p>
-                                    <p className="descriptions">DOP : {item.date}</p>
+                                    <p className="descriptions">DOP : {date.toDateString()}</p>
                                 </div>
                             )
                         })}
